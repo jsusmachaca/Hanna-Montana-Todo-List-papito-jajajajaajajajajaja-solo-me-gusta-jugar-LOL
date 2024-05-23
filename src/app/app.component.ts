@@ -26,6 +26,6 @@ export class AppComponent {
 
   ngAfterViewInit() {
     console.log(this.audio.nativeElement);
-    this.audio.nativeElement.volume = 0.05
+    this.audio.nativeElement.volume = 0.2
   }
 }

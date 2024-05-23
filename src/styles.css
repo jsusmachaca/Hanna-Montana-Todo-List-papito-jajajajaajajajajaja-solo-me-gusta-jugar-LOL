@@ -7,7 +7,9 @@
 }
 
 body {
-    background-image: url(" ./assets/roca.gif");
+    /*background-image: url(" ./assets/roca.gif");*/
+    background-image: url(" ./assets/hanna.jpeg");
+    background-size: cover;
     position: relative;
 }
 
