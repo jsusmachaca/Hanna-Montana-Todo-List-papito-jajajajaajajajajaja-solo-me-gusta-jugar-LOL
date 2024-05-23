@@ -1,0 +1,16 @@
+#filter-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    border: 1px solid black; 
+    margin: -1px; 
+    background-color: white; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: lightgray; 
+}

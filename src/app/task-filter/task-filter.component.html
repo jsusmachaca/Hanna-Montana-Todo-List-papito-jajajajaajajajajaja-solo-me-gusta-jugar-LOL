@@ -1,0 +1,5 @@
+<div id="filter-container">
+  <button (click)="setFilter('completed')" [class.active]="currentFilter === 'completed'">Completas</button>
+  <button (click)="setFilter('all')" [class.active]="currentFilter === 'all'">Todas</button>
+  <button (click)="setFilter('incomplete')" [class.active]="currentFilter === 'incomplete'">Incompletas</button>
+</div>

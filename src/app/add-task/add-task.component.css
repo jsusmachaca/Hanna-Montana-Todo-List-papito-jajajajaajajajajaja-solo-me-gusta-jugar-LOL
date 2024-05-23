@@ -1,0 +1,31 @@
+#input {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .7);
+    background-color: #e6e6e6;
+}
+
+#input:focus-visible, #input:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    margin: 0 10px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #33C2FF;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, .7);
+}
