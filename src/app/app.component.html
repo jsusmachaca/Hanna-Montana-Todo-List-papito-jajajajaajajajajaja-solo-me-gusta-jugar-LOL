@@ -1,11 +1,9 @@
-<main>
-  <section id="content">
-    <div id="filters">
-      <app-add-task (taskAdded)="addTask($event)"></app-add-task>
-      <app-task-filter (filterChanged)="setFilter($event)"></app-task-filter>
-      <app-task-list [tasks]="tasks" [filter]="filter"></app-task-list>
-    </div>
-  </section>
-  <img src="./assets/descarga (1).jpeg" alt="hanna" id="hanna">
-</main>
+<section id="content">
+  <div id="filters">
+    <app-add-task (taskAdded)="addTask($event)"></app-add-task>
+    <app-task-filter (filterChanged)="setFilter($event)"></app-task-filter>
+    <app-task-list [tasks]="tasks" [filter]="filter"></app-task-list>
+  </div>
+</section>
+<audio #audio src="../assets/roca3.m4a" autoplay loop></audio>
   

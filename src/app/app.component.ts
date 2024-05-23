@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 interface Task{
   taskName: string,
@@ -11,6 +11,8 @@ interface Task{
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild('audio') audio!: ElementRef<HTMLAudioElement>
+
   tasks: Task[] = [];
   filter: string = 'all';
 
@@ -20,5 +22,10 @@ export class AppComponent {
 
   setFilter(filter: string) {
     this.filter = filter;
+  }
+
+  ngAfterViewInit() {
+    console.log(this.audio.nativeElement);
+    this.audio.nativeElement.volume = 0.05
   }
 }
